@@ -32,3 +32,9 @@ jobs:
 
             - name: "List Directorys"
               run: ls
+
+            - name: "Run tests"
+              run: npm test
+
+            - name: "Run Bulid"
+              run: npm run build
