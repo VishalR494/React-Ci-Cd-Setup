@@ -34,7 +34,7 @@ jobs:
               run: ls
 
             - name: "Run tests"
-             run: npm test
+              run: npm test
 
             - name: "Run Bulid"
               run: npm run build
