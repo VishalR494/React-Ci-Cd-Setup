@@ -23,3 +23,9 @@ jobs:
 
             - name: "Clone the Repo"
               uses: actions/checkout@v2
+
+            - name: "Install Dependencies"
+              run: npm install
+
+            - name: "List Directorys"
+              run: ls
