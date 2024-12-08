@@ -21,11 +21,11 @@ jobs:
             - name: "Check node version"
               run: node --version
 
-            - name: "Clone the Repo"
-              uses: actions/checkout@v2
-
             - name: "Install Dependencies"
               run: npm install
 
+            - name: "Clone the Repo"
+              uses: actions/checkout@v2
+              
             - name: "List Directorys"
               run: ls
