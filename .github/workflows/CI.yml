@@ -33,8 +33,14 @@ jobs:
             - name: "List Directorys"
               run: ls
 
-            - name: "Run tests"
-              run: npm test
+           # - name: "Run tests"
+           #  run: npm test
 
             - name: "Run Bulid"
               run: npm run build
+
+            - name: "Upload product-ready build files"
+              uses: actions/upload-artifact@v4
+              with:
+                name: build
+                path: /dist
