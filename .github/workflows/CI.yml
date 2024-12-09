@@ -38,7 +38,7 @@ jobs:
               run: ls
             
             - name: "Upload product-ready build files"
-              uses: actions/upload-artifact
+              uses: actions/upload-artifact@v4
               with:
                 name: build
-                path: C:\Users\India\OneDrive\Pictures\Vishal_DevOps\Pipline\ReactCiCd\dist
+                path: /dist
