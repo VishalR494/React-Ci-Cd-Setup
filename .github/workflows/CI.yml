@@ -31,5 +31,8 @@ jobs:
             - name: "Install Dependencies"
               run: npm install
 
+            - name: "Run the build"
+              run: npm run build
+
             - name: "List Directorys"
               run: ls
