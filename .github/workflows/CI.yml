@@ -29,19 +29,20 @@ jobs:
               run: ls
 
             - name: "Install Dependencies"
-              #run: npm install
-              run: echo "Done"
+              run: npm install
+              
 
             - name: "Run the build"
               run: npm run build
 
             - name: "List Directorys"
+              run: ls
       
 
             #- name: "Run tests"
              # run: npm test
 
             - name: "Run Bulid"
-              run: npm
+              run: npm build
         
-                path: dist
+                
