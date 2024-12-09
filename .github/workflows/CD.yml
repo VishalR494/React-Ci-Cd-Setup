@@ -1,4 +1,4 @@
-name: "CD pipline"
+name: "CD pipeline"
 
 on:
     workflow_run:
