@@ -1,10 +1,11 @@
-name: "sample React CI Pipline / Workflow "
+name: "sample React CI Pipline / Workflow"
 
 on:
     push:
         branches:
             - main
             - master
+            - pipline_Backup
 
 jobs:
     build-and-test:
@@ -31,17 +32,16 @@ jobs:
               #run: npm install
               run: echo "Done"
 
+            - name: "Run the build"
+              run: npm run build
+
             - name: "List Directorys"
-              run: ls
+      
 
             #- name: "Run tests"
              # run: npm test
 
             - name: "Run Bulid"
-              run: npm run build
-
-            - name: "Upload product-ready build files"
-              uses: actions/upload-artifact@v4
-              with:
-                name: build
-                path: /dist
+              run: npm
+        
+                path: dist
