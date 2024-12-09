@@ -5,6 +5,7 @@ on:
         branches:
             - main
             - master
+            - pipline_Backup
 
 jobs:
     build-and-test:
