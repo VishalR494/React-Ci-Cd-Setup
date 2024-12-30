@@ -1,10 +1,10 @@
 pipeline {
     agent any
 
-    environment {
-        NODE_ENV = 'test'
-        VERCEL_TOKEN = credentials('VERCEL_TOKEN')
-    }
+    // environment {
+    //     NODE_ENV = 'test'
+    //     VERCEL_TOKEN = credentials('VERCEL_TOKEN')
+    // }
 
     options {
         skipDefaultCheckout(true) // Skip the default checkout
